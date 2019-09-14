@@ -2,8 +2,8 @@
 function demo {
   if [ $# -eq 0 ]
     then
-      echo "No arguments supplied"
-      exit 1;
+      echo "Please supply a name for the project directory"
+      return;
   fi
   mkdir $1
   cd $1
